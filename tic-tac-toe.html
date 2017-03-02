@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Tic-Tac-To</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tic-tac-toe.css" type="text/css" media="screen" charset="utf-8">
+    <script src="tic-tac-toe-logic.js" type="text/javascript" charset="utf-8"></script>
+   	<script src="tic-tac-toe-controller.js" type="text/javascript" charset="utf-8"></script>
+   	<script src="tic-tac-toe-view.js" type="text/javascript" charset="utf-8"></script>
+	
+    
+</head>
+<body onload="loadCookie()">
+		
+	
+	<table>
+		<tr><th colspan="4"><h1>Score</h1></th></tr>
+		<tr>
+			<th>Player X:</th>
+		    <th><h1 id="Player1"> </h1> </th>
+		    <th><h1 id="Player2"> </h1> </th>
+		    <th>:Player O</th>
+		</tr>
+		<tr>
+			<th colspan="2">Tie Game:</th>
+			<th ><h1 id="tie"></h1></th>
+		</tr>
+	</table>
+	<div style="text-align: center;"> <span onclick="clearForNewGame()" style="color: #00ff00; border: 1px solid red;">Press here to start new GAME </span> </div>
+	
+	<div style="text-align: center;"> <h2>Player <span id="currentPlayer" style="color: #00ff00;"> </span> your turn !!!! </h2></div>
+	<div id="board">
+		 		
+		<div class="cell" onclick="playDecision(this.id)" id="9">	<h4 id="0"></h4> </div>
+		<div class="cell" onclick="playDecision(this.id)" id="10">	<h4 id="1"></h4> </div>
+		<div class="cell" onclick="playDecision(this.id)" id="11">	<h4 id="2"></h4> </div>
+			
+			
+		<div class="cell" onclick="playDecision(this.id)" id="12">	<h4 id="3"></h4> </div>
+		<div class="cell" onclick="playDecision(this.id)" id="13">	<h4 id="4"></h4> </div>
+		<div class="cell" onclick="playDecision(this.id)" id="14">	<h4 id="5"></h4> </div>
+			
+			 
+		<div class="cell" onclick="playDecision(this.id)" id="15">	<h4 id="6"></h4> </div>
+		<div class="cell" onclick="playDecision(this.id)" id="16">	<h4 id="7"></h4> </div>
+		<div class="cell" onclick="playDecision(this.id)" id="17">	<h4 id="8"></h4> </div>
+			
+			
+					
+	</div>
+
+	
+
+	
+</body>
+
+
+
+
+</html>
